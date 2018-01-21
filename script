@@ -1,0 +1,6 @@
+rm sacnm.txt
+ls *.SAC >> sacnm.txt
+while read sacnm
+do
+r $sacnm
+done <sacnm.txt
