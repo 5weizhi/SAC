@@ -6,7 +6,8 @@ rm sacnm.txt
 #put all the names of SAC files into the file named by sacnm.txt
 ls *.SAC >> sacnm.txt  
 
-#a loop used to r sacfiles one by one
+#a loop used to read sacfiles one by one
+#we can use abbrivated form of commands in SAC :) "r $sacnm " means "read $sacnm "
 while read sacnm       
 do
 r $sacnm
