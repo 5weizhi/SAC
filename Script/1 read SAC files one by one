@@ -1,1 +1,13 @@
+#!/bin/bash
 
+#remove sacnm.txt if there has already had one
+rm sacnm.txt     
+
+#put all the names of SAC files into the file named by sacnm.txt
+ls *.SAC >> sacnm.txt  
+
+#a loop used to r sacfiles one by one
+while read sacnm       
+do
+r $sacnm
+done <sacnm.txt
